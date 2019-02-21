@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>
+    <a href="/index/edit/0">new blog</a>
+</h2>
+
+    {% for article in articles %}
+    <a href="/index/article_page/{{article.id}}">{{article.title}}</a>
+    <br>
+    {% endfor%}
+</body>
+</html>
